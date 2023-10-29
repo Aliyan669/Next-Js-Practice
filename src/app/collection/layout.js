@@ -1,6 +1,6 @@
 'use client'  ///   Jab koi event call karta hai isko add karta hai sabsa top pa    ///
 import Link from 'next/link'
-import './login.css'
+import './collection.css'
 import { usePathname } from 'next/navigation'
 
 export default function Layout({ children }) {
@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     return (
         <div className='main'>
             {/* //////////////// Common Layout //////////// ye common layout hai jo sab pa show hoga */}
-            
+
             {/* <ul className='login-layout'>
                 <li>Collection Navbar</li>
                 <li><Link className='link' href="/collection" >Collection Page</Link></li>

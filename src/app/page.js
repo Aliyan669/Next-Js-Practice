@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 
 export default function Home() {
   const [name, setName] = useState("Aliyan")
-  
+
   const apple = (item) => {
     // alert(item)
     setName("Amir")
@@ -26,9 +26,9 @@ export default function Home() {
   <button onClick={()=>apple()}>Click Here</button> */}
       {/* <Link href={"/about"} >About Page</Link> <br />
       <Link href={"/contact"} >Contact Page</Link> */}
-       
-       <button onClick={() => Navigate("/collection")}>Go to Collection Page</button><br /><br />
-       <button onClick={() => Navigate("/contact")}>Go to Contact Page</button>
+
+      <button onClick={() => Navigate("/collection")}>Go to Collection Page</button><br /><br />
+      <button onClick={() => Navigate("/contact")}>Go to Contact Page</button>
     </main>
   )
 }

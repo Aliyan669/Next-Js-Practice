@@ -6,9 +6,9 @@ import { useRouter } from 'next/navigation'
 export default function Collection() {
     const router = useRouter();
     const Navigate = (page) => {
-      router.push("/collection/"+page)
+        router.push("/collection/" + page)
     }
-  
+
     return (
         <div><h1>Collection Page</h1>
             {/* <Link href="/collection/men" >Men Collection</Link><br />
