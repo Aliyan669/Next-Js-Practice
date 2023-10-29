@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-layout {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background-color: blue;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+li {
+    margin: 0px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main {
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
