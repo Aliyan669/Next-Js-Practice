@@ -1,7 +1,7 @@
 'use client'  ///   Jab koi event call karta hai isko add karta hai sabsa top pa    ///
 //////////  Fetch Api Data in Client Components /////////////
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react"
 
 export default function Page() {
 
@@ -15,7 +15,7 @@ export default function Page() {
 
     return (
         <div>
-            <h1>Product List</h1>
+            <h1>Fetch Api Data in Client Components</h1>
             {
                 product.map((e) => (
                     <h3>{e.title}</h3>
