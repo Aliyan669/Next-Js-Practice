@@ -10,3 +10,13 @@ export default function Study() {
         </div>
     )
 }
+
+
+/////// This is Dynamic Meta Data ////////
+
+export function generateMetadata() {
+    return {
+        title: "Study",
+        description: "This is a Study Page"
+    }
+}

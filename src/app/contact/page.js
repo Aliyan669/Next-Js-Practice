@@ -7,3 +7,12 @@ export default function Contact() {
         </div>
     )
 }
+
+/////// This is Dynamic Meta Data ////////
+
+export function generateMetadata() {
+    return {
+        title: "Contact",
+        description: "This is a Contact Page"
+    }
+}

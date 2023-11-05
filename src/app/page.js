@@ -8,8 +8,13 @@ import style from './style.module.css'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import vercimg from '../../public/vercel.svg'
+import { Roboto } from 'next/font/google'     ///////// Font Optimization ///////////
 
-
+const roboto = Roboto({
+  weight:'100',
+  subsets:['latin'],
+  display:'swap'
+})
 
 export default function Home() {
   const [name, setName] = useState("Aliyan")
@@ -48,16 +53,21 @@ export default function Home() {
       <h1 className={green}>This is a Text</h1> */}
 
       {/* /////////////// Image Optimization /////////// */}
-      <h1>Image Optimization in Next Js</h1>
-      
+      {/* <h1>Image Optimization in Next Js</h1> */}
+
       {/* <Image src={vercimg} /> */}
       {/* <img  src={vercimg.src}/> */}
-      <Image src='https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png'
+      {/* <Image src='https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png'
         width={800}
         height={800}
-      />
+      /> */}
 
+      {/* /////////////// Font Optimization /////////// */}
+      {/* <h1>Font Optimization in Next Js</h1>
+      <h1 className={roboto.className}>FONT WITH NEXT JS FONT FEATURE</h1> */}
 
+    
+ 
     </main>
 
   )
