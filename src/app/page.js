@@ -66,7 +66,7 @@ export default function Home() {
       {/* <h1>Font Optimization in Next Js</h1>
       <h1 className={roboto.className}>FONT WITH NEXT JS FONT FEATURE</h1> */}
 
-    
+    <h1>Hello World</h1>
  
     </main>
 
