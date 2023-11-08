@@ -5,6 +5,7 @@ async function userList() {
     let data = await fetch("https://dummyjson.com/users");
     data = await data.json();
     return data.users;
+
 }
 
 export default async function page() {
@@ -16,7 +17,7 @@ export default async function page() {
             {
                 users.map((e) => (
                     <div>
-                        <h3>User Name: {e.title}</h3>
+                        <h3>User Name: {e.firstName}</h3>
 
                     </div>
                 ))

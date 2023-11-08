@@ -11,9 +11,9 @@ import vercimg from '../../public/vercel.svg'
 import { Roboto } from 'next/font/google'     ///////// Font Optimization ///////////
 
 const roboto = Roboto({
-  weight:'100',
-  subsets:['latin'],
-  display:'swap'
+  weight: '100',
+  subsets: ['latin'],
+  display: 'swap'
 })
 
 export default function Home() {
@@ -65,8 +65,8 @@ export default function Home() {
       {/* /////////////// Font Optimization /////////// */}
       {/* <h1>Font Optimization in Next Js</h1>
       <h1 className={roboto.className}>FONT WITH NEXT JS FONT FEATURE</h1> */}
+      {/* <img src='dummy.png' /> */}
 
- 
     </main>
 
   )
