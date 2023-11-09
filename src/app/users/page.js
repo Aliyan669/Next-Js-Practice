@@ -8,11 +8,11 @@ export default async function page() {
         <div>
             <h1>User List in SSG (Static Side Generation)</h1>
             {
-                users.map((e) => {
-                    <h2>
+                users.map((e) => (
+                    <h2 key={e.id}>
                         <Link href={`/users/${e.id}`}>{e.name}</Link>
                     </h2>
-                })
+                ))
             }
         </div>
     )

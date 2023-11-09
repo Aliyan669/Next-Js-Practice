@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import vercimg from '../../public/vercel.svg'
 import { Roboto } from 'next/font/google'     ///////// Font Optimization ///////////
+import { API_BASE_URL } from './config/constant'
 
 const roboto = Roboto({
   weight: '100',
@@ -17,6 +18,11 @@ const roboto = Roboto({
 })
 
 export default function Home() {
+
+  console.log(process.env.NODE_ENV)
+  console.log(process.env.SERVER_PASSWORD)
+  console.log(process.env.DB_PASSWORD)
+
   const [name, setName] = useState("Aliyan")
   const [color, setColor] = useState("green")
   const { red } = style;
@@ -67,12 +73,20 @@ export default function Home() {
       <h1 className={roboto.className}>FONT WITH NEXT JS FONT FEATURE</h1> */}
       {/* <img src='dummy.png' /> */}
 
+      {/* <h1>Redirection in Next Js</h1> */}
+
+      {/* <h1>Environment Variable in Next Js</h1>
+      {
+        process.env.NODE_ENV == "development" ?
+          <h1>You are in Development Mode</h1> :
+          <h1>You are in Production Mode</h1>
+
+      } */}
+
     </main>
 
   )
 }
-
-<h1>Hello World</h1>
 
 // const Sequence = (props) => {
 //   return(
@@ -80,3 +94,4 @@ export default function Home() {
 //       <h1>My Name is {props.name}</h1>
 //      </div>
 // )}
+

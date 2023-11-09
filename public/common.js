@@ -1,2 +1,2 @@
-/////////   This is static Page   //////////
-console.warn("Common Next JS");
+// /////////   This is static Page   //////////
+// console.warn("Common Next JS");
